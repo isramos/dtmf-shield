@@ -1,8 +1,8 @@
 /*
   dtmf_loopback
-  this is a demo code for use with DTMF Module available at http://dossant.com
+  this is a demo code for use with the DTMF Shield for Arduino
   
-  Product page: http://www.dossant.com/projects/products/dtmf-module/
+  Project page: https://github.com/isramos/dtmf-shield
    
   This code sends a random dtmf code on pins 11 and 12 every second, 
   and receive dtmf digits via pins 3, 4, 5 and 6 upon a rising edge interrupt on pin 2
