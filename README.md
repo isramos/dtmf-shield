@@ -6,6 +6,8 @@ A small board that plugs into an Arduino Uno and turns DTMF (touch-tone) signals
 
 A DTMF decoder chip does the heavy lifting, so the interface to your sketch is a handful of digital pins.
 
+![What the DTMF shield does: a key press becomes two tones, which the shield decodes to a 4-bit value on pins 8 to 11](docs/images/what-it-does.svg)
+
 ## Features
 
 - Operating voltage 5 V, current draw 3 mA

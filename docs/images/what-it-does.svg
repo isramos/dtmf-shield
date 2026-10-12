@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="270" viewBox="0 0 680 270" role="img">
+<title>What the DTMF shield does</title>
+<desc>A key press produces two tones, 770 Hz and 1336 Hz. The shield decodes them to the 4-bit value 0101, which the Arduino reads on pins 8 to 11, and pulses data-ready on pin 12.</desc>
+<style>
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:12px;fill:#444}
+.h{font-size:14px;font-weight:600;fill:#222}
+.in{fill:#f1efe8;stroke:#888780}.sh{fill:#e1f5ee;stroke:#0f6e56}.pn{fill:#eeedfe;stroke:#534ab7}
+.bit{fill:#fff;stroke:#534ab7}.ln{stroke:#666;fill:none;stroke-width:1.5}
+@media (prefers-color-scheme:dark){text{fill:#c9d1d9}.h{fill:#f0f6fc}.in{fill:#2c2c2a;stroke:#888780}.sh{fill:#04342c;stroke:#5dcaa5}.pn{fill:#26215c;stroke:#afa9ec}.bit{fill:#0d1117;stroke:#afa9ec}.ln{stroke:#9ca3af}}
+</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect class="in" x="30" y="50" width="180" height="150" rx="8"/>
+<text class="h" x="120" y="76" text-anchor="middle">Audio in</text>
+<text x="120" y="96" text-anchor="middle">key 5 pressed</text>
+<text x="120" y="120" text-anchor="middle">770 Hz + 1336 Hz</text>
+<path d="M50 150 Q60 120 70 150 T90 150 T110 150 T130 150 T150 150 T170 150 T190 150" fill="none" stroke="#ba7517" stroke-width="1.5"/>
+<path d="M50 175 Q55 160 60 175 T70 175 T80 175 T90 175 T100 175 T110 175 T120 175 T130 175 T140 175 T150 175 T160 175 T170 175 T180 175 T190 175" fill="none" stroke="#378add" stroke-width="1.5"/>
+<line class="ln" x1="212" y1="125" x2="248" y2="125" marker-end="url(#a)"/>
+<rect class="sh" x="250" y="50" width="170" height="150" rx="8"/>
+<text class="h" x="335" y="76" text-anchor="middle">DTMF shield</text>
+<text x="335" y="96" text-anchor="middle">HT9170B decoder</text>
+<text x="335" y="150" text-anchor="middle">gain: trim pot</text>
+<text x="335" y="170" text-anchor="middle">LED blinks</text>
+<line class="ln" x1="422" y1="125" x2="448" y2="125" marker-end="url(#a)"/>
+<rect class="pn" x="450" y="50" width="200" height="150" rx="8"/>
+<text class="h" x="550" y="76" text-anchor="middle">Arduino pins</text>
+<text x="478" y="104" text-anchor="middle">D3</text><text x="514" y="104" text-anchor="middle">D2</text><text x="550" y="104" text-anchor="middle">D1</text><text x="586" y="104" text-anchor="middle">D0</text>
+<rect class="bit" x="464" y="112" width="28" height="30" rx="4"/><rect class="bit" x="500" y="112" width="28" height="30" rx="4"/><rect class="bit" x="536" y="112" width="28" height="30" rx="4"/><rect class="bit" x="572" y="112" width="28" height="30" rx="4"/>
+<text class="h" x="478" y="132" text-anchor="middle">0</text><text class="h" x="514" y="132" text-anchor="middle">1</text><text class="h" x="550" y="132" text-anchor="middle">0</text><text class="h" x="586" y="132" text-anchor="middle">1</text>
+<text x="550" y="168" text-anchor="middle">= 5, DR pin goes high</text>
+<text x="340" y="238" text-anchor="middle">pins 8 to 11 carry the digit, pin 12 says "new digit ready"</text>
+</svg>
